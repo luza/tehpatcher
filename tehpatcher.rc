@@ -1,0 +1,144 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAINDIALOG DIALOGEX 0, 0, 400, 247
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Teh Greatest Lumi Patcher"
+FONT 8, "MS Shell Dlg", 400, 0, 0xCC
+BEGIN
+    DEFPUSHBUTTON   "&Старт",IDOK2,282,224,50,14,WS_DISABLED
+    PUSHBUTTON      "&Закрыть",IDCANCEL,337,224,50,14
+    PUSHBUTTON      "&Прокси...",IDSETTINGS,10,224,50,14
+END
+
+IDD_OPTSDIALOG DIALOGEX 0, 0, 247, 106
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Настройки"
+FONT 8, "Tahoma", 400, 0, 0xCC
+BEGIN
+    DEFPUSHBUTTON   "ОК",IDOK,191,7,50,14
+    PUSHBUTTON      "Отмена",IDCANCEL,191,24,50,14
+    GROUPBOX        "   ",IDC_STATIC,6,3,177,96
+    EDITTEXT        IDC_ADDRESS,72,16,103,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Адрес прокси:",IDC_STATIC,14,18,50,8
+    LTEXT           "Порт прокси:",IDC_STATIC,14,34,46,8
+    EDITTEXT        IDC_PORT,72,32,26,12,ES_AUTOHSCROLL | ES_NUMBER | WS_DISABLED
+    CONTROL         "Использовать прокси",IDC_PROXY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,3,88,10
+    CONTROL         "Прокси требует авторизации",IDC_AUTH,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,14,49,115,10
+    EDITTEXT        IDC_USERNAME,71,64,103,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Пользователь:",IDC_STATIC,14,66,52,8
+    EDITTEXT        IDC_PASSWORD,71,80,103,12,ES_PASSWORD | ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Пароль:",IDC_STATIC,14,82,28,8
+    RTEXT           "1.2.1",IDC_VERSION,203,91,37,8,WS_DISABLED
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MAINDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 392
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 240
+    END
+
+    IDD_OPTSDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON                    "rsc\\lumi2.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_PB                  BITMAP                  "rsc\\PB.bmp"
+IDB_BG                  BITMAP                  "rsc\\patch.bmp"
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
